@@ -2,8 +2,6 @@ import sqlite3 as sq
 from tkinter import ttk
 from tkinter import *
 import datetime
-import os
-import sys
 
 def login():
     User = Username.get()
