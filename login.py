@@ -38,10 +38,10 @@ def signup():
             if(row[0] == f'{User}'):
                 print("User already registered")
                 return
-            cursor.execute(f"INSERT INTO userinfo VALUES ('{User}','{Pass}')")
-            conn.commit()
-            conn.close()
-            print("Sign Up successfull")
+        cursor.execute(f"INSERT INTO userinfo VALUES ('{User}','{Pass}')")
+        conn.commit()
+        conn.close()
+        print("Sign Up successfull")
     except sq.Error as e:
         print(e)
 root = Tk()
